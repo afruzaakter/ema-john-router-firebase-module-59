@@ -1,4 +1,4 @@
-.header{
+/* .header{
     height: 80px;
     background-color: #1C2B35;
     display: flex;
@@ -6,8 +6,8 @@
     justify-content: space-between;
     padding-left: 140px;
     padding-right: 140px;
-}
-
+} 
+ 
 .header a{
     color: #FFFFFF;
     text-decoration: none;
@@ -16,4 +16,40 @@
 }
 .header a:hover{
     color: orange;
+} */
+
+
+
+/* // 2 proscss */
+.header{
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    color: wheat;
+    transition: color ease-in-out 300ms;
+    
 }
+.header:hover{
+    color: white;
+   
+}
+.navbar{
+    background-color: rgb(88, 88, 88);
+}
+.active-link {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    transition: color ease-in-out 300ms;
+    color: white;
+    background-color: rgb(244, 106, 184);
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+  .login-style{
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    color: wheat;
+    transition: color ease-in-out 300ms;
+  }

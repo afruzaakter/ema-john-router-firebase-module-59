@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import GoogleLogo from '../../images/google.svg';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
+// import '../Login/Login.css'
 
 const SignUp = () => {
     const [email, setEmail] = useState('');
@@ -43,21 +44,21 @@ const SignUp = () => {
   }
 
     return (
-        <div className='form-container'>
+        <div className='my-form-container'>
         <div>
         <h2 className='form-title'>Sign Up</h2>
        <form onSubmit={handleCreateUser}>
-           <div className='input-group'>
+           <div className='my-input-group'>
               <label htmlFor="email">Email</label>
               <input onBlur={handleEmailBlur} type="email" name='email' id='' required/>
            </div>
         
           
-          <div className='input-group'>
+          <div className='my-input-group'>
               <label htmlFor="password">Password</label>
               <input onBlur={handlePasswordBlur} type="password" name='password' id='' required />
           </div>
-          <div className='input-group'>
+          <div className='my-input-group'>
               <label htmlFor="confirm-password">Confirm Password</label>
               <input onBlur={handleConfirmPasswordBlur} type="password" name='confirm-password' id='' required />
               <p style={{color:'red'}}>{error}</p>
